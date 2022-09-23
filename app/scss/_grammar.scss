@@ -1,0 +1,164 @@
+//правила вверху страниц tenses
+.t-grammar {
+  &__name {
+    @extend %bold;
+    font-size: 18px;
+  }
+  &__wrp {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    // @extend %mediumI;
+    // border-top: 1px solid #000;
+    // border-bottom: 1px solid #000;
+    // border-left: 5px solid $accent;
+    // border-radius: 0% 5% 5% 0%/0% 15% 15% 0%;
+    // background-color: $grey;
+    // background-color: $default;
+    // color: white;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../img/icons/brk.svg');
+      width: 20px;
+      height: 98px;
+      left: -15px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/icons/brk1.svg');
+      width: 20px;
+      height: 98px;
+      right: -15px;
+    }
+
+    span:not(:last-child) {
+      margin-right: 20px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+//3
+.g-subtitle {
+  margin-top: 10px;
+  font-size: 26px;
+  color: $default;
+}
+
+//4
+.g-topic-subtitle {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: $default;
+}
+
+//5
+.g-little-subtitle {
+  padding-left: 35px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: $default;
+  background-image: url('../img/icons/book.svg');
+  background-repeat: no-repeat;
+  background-position: 0 80%;
+}
+
+//text
+.g-paragraph {
+  padding: 0 8px;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+//примеры слов или предложений
+.g-ul {
+  padding: 0 20px;
+}
+
+.g-li {
+  padding-left: 35px;
+  color: $default;
+  background-image: url('../img/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+
+//таблицы
+.g-table {
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%;
+  // border: 20px solid $accent-light;
+  background-color: $accent-light;
+  &__td {
+    padding-right: 20px;
+    font-size: 15px;
+    max-width: 100px;
+    padding-bottom: 20px;
+    @extend %semiBold;
+    // span {
+    //   display: block;
+    // }
+  }
+  &__head {
+    .g-table__td {
+      @extend %bold;
+      font-size: 18px;
+    }
+  }
+  &__body {
+    .g-table__ru {
+      @extend %mediumI;
+      display: block;
+      // color: $default;
+      color: $added;
+      font-size: 14px;
+    }
+  }
+}
+
+
+.g-play,
+.g-resume,
+.g-pause {
+  position: relative;
+  float: left;
+  outline: none;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    top: 1px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.g-play::after {
+  background-image: url('../img/icons/play.svg');
+}
+
+.g-pause::after,
+.g-resume::after {
+  background-image: url('../img/icons/pause.svg');
+}
+
+.g-span {
+  padding-left: 28px;
+  cursor: pointer;
+}

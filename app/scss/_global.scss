@@ -1,5 +1,5 @@
 body {
-  @extend %red;
+  @extend %medium;
   font-size: 16px;
   line-height: 1.5;
   color: $default;
@@ -12,19 +12,58 @@ body {
 }
 
 a {
-  @extend %red;
+  @extend %bold;
   color: $default;
 }
 
 button {
+  padding: 0;
   border: none;
+  background: none;
   cursor: pointer;
 }
 
-.title {
+//global
+// h1-main
+// h2-every file
+// h3-every file (subtitle main on top)
+// h4-every file (subtitle of topic)
+// h5-every file (subtitle little)
+
+.g-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 900px;
+}
+
+//отступ
+.g-margin {
   margin-bottom: 50px;
-  @extend %red;
+}
+
+//акцентный цвет нужных слов
+.g-accent {
+  color: $accent-words;
+}
+
+.g-bold {
+  // @extend %boldI;
+}
+
+//2
+.g-title {
+  display: inline-block;
+  // margin-bottom: 5px;
+  padding-top: 30px;
+  @extend %semiBold;
   color: $default;
-  font-size: 56px;
-  line-height: 1.5;
+  font-size: 58px;
+  border-bottom: 5px solid $accent;
+}
+
+.g-top {
+  background-color: $accent-light;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 40px;
 }

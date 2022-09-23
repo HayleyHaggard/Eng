@@ -1,0 +1,62 @@
+$default: #000;
+
+
+$accent: #c7bcf1;
+$accent-light: #e1ddf2;
+
+$accent-words: #ad31ff;
+$added: rgb(88, 88, 88);
+
+// $accent: #c59cff;
+$mint: #8ddec8;
+$green: #bef3bc;
+$pink: #e9b3b6;
+// $yellow: #f4f480;
+$yellow: #fed965;
+$blue: #abd7f0;
+$violet: #bcbdf1;
+$grey: #F7F7F7;
+
+
+%medium {
+  font-family: 'OpenSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%mediumI {
+  font-family: 'OpenSans-MediumItalic', sans-serif;
+  font-weight: 500;
+}
+
+%semiBold {
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%bold {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%boldI {
+  font-family: 'OpenSans-BoldItalic', sans-serif;
+  font-weight: 700;
+}
+
+%btn {
+  padding: 15px 27px;
+  background-color: $accent;
+  color: black;
+  @extend %bold;
+  border-radius: 15px;
+}
+
+%input {
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  resize: none;
+}
