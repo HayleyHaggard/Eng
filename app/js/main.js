@@ -1,14 +1,10 @@
-// Это часть должна быть вам знакома по предыдущему примеру
 let voices = speechSynthesis.getVoices()
 let defaultVoice
 
 speechSynthesis.onvoiceschanged = () => {
   voices = speechSynthesis.getVoices()
-  console.log(voices)
-  defaultVoice = voices.find((voice) => voice.name === 'Google US English')
-  // defaultVoice = voices.find((voice) => voice.name === 'Microsoft David - English (United States)')
-
-
+  // defaultVoice = voices.find((voice) => voice.name === 'Google US English')
+  defaultVoice = voices.find((voice) => voice.name === 'Microsoft David - English (United States)')
 
   main.addEventListener('click', handleClick)
   window.addEventListener('keydown', handleKeydown)
@@ -21,13 +17,11 @@ const RESUME = 'g-resume'
 function handleClick({ target }) {
   switch (target.className) {
     case PLAY:
-      // При нажатии кнопки `play` в момент озвучивания другого текста,
-      // нам нужно прекратить текущее озвучивание перед началом нового
       speechSynthesis.cancel()
 
       const { textContent } = target.nextElementSibling
+      console.log(textContent)
 
-      // Об этой части см. ниже
       textContent.split('.').forEach((text) => {
         const trimmed = text.trim()
         if (trimmed) {
@@ -36,13 +30,12 @@ function handleClick({ target }) {
         }
       })
       break
+
     case PAUSE:
-      // CSS-класс кнопки отвечает за отображаемую рядом с ней иконку
-      // ``- ожидание/стоп, `` - озвучивание/воспроизведение, `` - пауза
-      // иконка `` используется в качестве индикатора кнопки, находящейся в фокусе
       target.className = RESUME
       speechSynthesis.pause()
       break
+
     case RESUME:
       target.className = PAUSE
       speechSynthesis.resume()
@@ -52,8 +45,6 @@ function handleClick({ target }) {
   }
 }
 
-// При нажатии `escape` прекращаем озвучивание текста
-// Можете добавить свои контролы
 function handleKeydown({ code }) {
   switch (code) {
     case 'Escape':
@@ -71,16 +62,15 @@ function getUtterance(target, text) {
   U.rate = 1
   U.pitch = 1
 
-  // Я специально не стал скрывать смену иконок при начале/окончании воспроизведения
   U.onstart = () => {
-    console.log('Started')
     target.className = PAUSE
   }
   U.onend = () => {
-    console.log('Finished')
     target.className = PLAY
   }
   U.onerror = (err) => console.error(err)
 
   return U
 }
+
+

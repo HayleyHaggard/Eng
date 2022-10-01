@@ -36,6 +36,12 @@ button {
   max-width: 900px;
 }
 
+.table-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1100px;
+}
+
 //отступ
 .g-margin {
   margin-bottom: 50px;
@@ -47,8 +53,9 @@ button {
 }
 
 .g-bold {
-  // @extend %boldI;
+  @extend %bold;
 }
+
 
 //2
 .g-title {
