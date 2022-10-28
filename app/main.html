@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eng</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+  <!-- header  -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="logo image">
+        </a>
+        <nav class="menu">
+          <button class="menu__btn">
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="grammar/grammar.html">Грамматика</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Упражнения</a>
+            </li>
+            <!-- <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Тренажеры</a>
+            </li> -->
+            <!-- <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Словарь</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Материалы</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Блог</a>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- <button class="menu__user-btn">
+          Личный кабинет
+        </button> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- side menu -->
+
+  <div class='s-menu'>
+    <ul class='s-menu__ul'>
+      <li class='s-menu__li'><a class='s-menu__a' href="#A"><span>A</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#B"><span>B</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#C"><span>C</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#D"><span>D</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#E"><span>E</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#F"><span>F</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#G"><span>G</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#H"><span>H</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#I"><span>I</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#J"><span>J</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#K"><span>K</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#L"><span>L</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#M"><span>M</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#O"><span>O</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#P"><span>P</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#Q"><span>Q</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#R"><span>R</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#S"><span>S</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#T"><span>T</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#U"><span>U</span></a></li>
+      <li class='s-menu__li'><a class='s-menu__a' href="#W"><span>W</span></a></li>
+    </ul>
+  </div>
+
+  <!-- table with search -->
+  <div class="table-container">
+    <table class="g-table">
+      <thead class="g-table__head">
+        <tr class="g-table__tr">
+          <td class="g-table__td" colspan='5'>
+            <div class="search-wrapper">
+              <input onkeyup="myFunction()" type="search" placeholder="Поиск по таблице" id='search'>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="g-table__td">Usage</td>
+          <td class="g-table__td">Infinitive</td>
+          <td class="g-table__td">Past Simple</td>
+          <td class="g-table__td">Past Participle </td>
+          <td class="g-table__td">Перевод</td>
+        </tr>
+      </thead>
+      <!-- <tfoot class="search-body-container"></tfoot> -->
+      <tbody class="g-table__body ">
+        <!-- A -->
+        <tr class="g-table__tr" id='A'>
+          <td class="g-table__td">
+            <div class="f-marker__wrapper">
+              <div class="f-marker" style="width: 22px"></div>
+            </div>
+          </td>
+          <td class="g-table__td">
+            <p class='search__i'>lorem</p>
+            <span>lorem</span>
+          </td>
+          <td class="g-table__td">
+            <p class='search__i'>lorem</p>
+            <span>lorem</span>
+          </td>
+          <td class="g-table__td">
+            <p class='search__i'>lorem</p>
+            <span>lorem</span>
+          </td>
+          <td class="g-table__td">
+            Lorem ipsum dolor sit amet.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- table without search  -->
+  <div class="table-container">
+    <div class="g-margin">
+      <article class="g-paragraph t-grammar">
+        <table class="g-table">
+          <thead class="g-table__head">
+            <tr class="g-table__tr">
+              <td class="g-table__td">Утверждение</td>
+              <td class="g-table__td">Отрицание</td>
+              <td class="g-table__td">Вопрос</td>
+            </tr>
+          </thead>
+
+          <tbody class="g-table__body">
+            <tr class="g-table__tr">
+              <td class="g-table__td">
+                <table class="g-table__small">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Сущ.
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">will</span>
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">be</span>
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">V(ing)</span>
+                      </td>
+                      <td>+</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td class="g-table__td">
+                <table class="g-table__small">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Сущ.
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">will</span>
+                      </td>
+                      <td>+</td>
+                      <td>not</td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">be</span>
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">V(ing)</span>
+                      </td>
+                      <td>+</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td class="g-table__td">
+                <table class="g-table__small">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="g-accent">Will</span>
+                      </td>
+                      <td>+</td>
+                      <td>сущ.</td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">be</span>
+                      </td>
+                      <td>+</td>
+                      <td>
+                        <span class="g-accent">V(ing)</span>
+                      </td>
+                      <td>+</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr class="g-table__tr">
+              <td class="g-table__td">
+                <button class="g-play"></button>
+                <span class="g-span">I <span class="g-accent">will be</span> talk<span class="g-accent">ing</span> with John at 7 o'clock.</span>
+                <span class="g-table__ru">Я буду разговаривать с Джоном в семь часов.</span>
+              </td>
+              <td class="g-table__td">
+                <button class="g-play"></button>
+                <span class="g-span">I <span class="g-accent">will</span> not <span class="g-accent">be</span> talk<span class="g-accent">ing</span> with John at 7 o'clock.</span>
+                <span class="g-table__ru">Я не буду разговаривать с Джоном в семь часов.</span>
+              </td>
+              <td class="g-table__td">
+                <button class="g-play"></button>
+                <span class="g-span"><span class="g-accent">Will</span> I <span class="g-accent">be</span> talk<span class="g-accent">ing</span> with John at 7 o'clock?</span>
+                <span class="g-table__ru">Буду ли я разговаривать с Джоном в семь часов?</span>
+              </td>
+            </tr>
+
+            <tr class="g-table__tr">
+              <td class="g-table__td" colspan="3">
+                <table class="table-info">
+                  <tbody>
+                    <tr>
+                      <td class="g-table__td">
+                        <div class="g-table__small-div">
+                          <span>V - глагол</span>
+                          <span>
+                            I ф. / II ф. / III ф. - форма неправильного глагола
+                          </span>
+                          <span>(s/es) / (ing) / (ed) - окончания глагола</span>
+                          <span>
+                            <img src="../../img/icons/play.svg" alt="play icon"> - прослушать произношение
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+  </div>
+
+  <!-- block  -->
+  <div class="g-container">
+    <div class="g-margin">
+      <h4 class="g-topic-subtitle ">
+        Title
+      </h4>
+      <h4 class="g-little-subtitle">Продолжительные действия в конкретный момент времени в будущем</h4>
+      <article class="g-paragraph">
+        <p>
+          <b>Future Continuous</b> используется для описания действий, которые будут происходить в конкретный, точно известный момент времени или некоторый промежуток времени в будущем.
+        </p>
+        <ul class="g-ul">
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">I <span class="g-accent">will be</span> wait<span class="g-accent">ing</span> for you here at 9 a.m. tomorrow. </span>
+            <span class="g-table__ru">— Я буду ждать тебя здесь завтра в девять утра.</span>
+          </li>
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">Tom <span class="g-accent">will be</span> play<span class="g-accent">ing</span> football all day next Sunday. </span>
+            <span class="g-table__ru">— Том будет играть в футбол всё следующее воскресенье.</span>
+          </li>
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">This time next week I <span class="g-accent">will be</span> fly<span class="g-accent">ing</span> to Berlin. </span>
+            <span class="g-table__ru">— В это же время на следующей неделе я буду лететь в Берлин.</span>
+          </li>
+        </ul>
+        <p>
+          Точный момент времени в <b>Future Continuous</b> может уточняться другим, более кратковременным действием, которое выражено в <b>Present Simple</b>.
+        </p>
+        <ul class="g-ul">
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">I <span class="g-accent">will be</span> cook<span class="g-accent">ing</span> dinner when she leaves. </span>
+            <span class="g-table__ru">— Я буду готовить обед, когда она уйдет.</span>
+          </li>
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">He <span class="g-accent">will be</span> wash<span class="g-accent">ing</span> the car when the postman comes. </span>
+            <span class="g-table__ru">— Он будет мыть машину, когда придет почтальон.</span>
+          </li>
+          <li class="g-li">
+            <button class="g-play"></button>
+            <span class="g-span">They <span class="g-accent">will be</span> watch<span class="g-accent">ing</span> the game when the rain starts. </span>
+            <span class="g-table__ru">— Они будут смотреть игру, когда начнется дождь.</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <!-- examples -->
+  <div class="g-container">
+    <ul class="g-ul">
+      <li class="g-li">
+        <button class="g-play"></button>
+        <span class="g-span"> 1</span>
+        <span class="g-table__ru">1</span>
+      </li>
+      <li class="g-li">
+        <button class="g-play"></button>
+        <span class="g-span">1</span>
+        <span class="g-table__ru">1</span>
+      </li>
+      <li class="g-li">
+        <button class="g-play"></button>
+        <span class="g-span">1</span>
+        <span class="g-table__ru">1</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- big title -->
+  <div class="g-container">
+    <h4 class="g-topic-subtitle ">
+      Title
+    </h4>
+  </div>
+
+  <!-- little title -->
+  <div class="g-container">
+    <h4 class="g-little-subtitle">Small title</h4>
+  </div>
+
+  <!-- top -->
+  <div class="g-top">
+    <h2 class="g-title">
+      Irregular verbs
+    </h2>
+    <h3 class="g-subtitle g-margin">
+      Неправильные глаголы
+    </h3>
+  </div>
+
+  <!-- <span class="g-accent"></span> -->
+
+  <!-- — -->
+
+  <!-- <b></b> -->
+
+  <!-- <a href="#">Подробнее о конструкции to be going to здесь...</a> -->
+
+  <!-- продвинутая грамматика -->
+
+  <!-- маркеры -->
+
+</body>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

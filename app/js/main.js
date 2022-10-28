@@ -74,3 +74,47 @@ function getUtterance(target, text) {
 }
 
 
+// document.querySelector('#search').oninput = function () {
+//   let val = this.value.trim();
+//   console.log(val)
+//   let items = document.querySelectorAll('.g-table__tr p');
+//   if (val != '') {
+//     items.forEach(function (elem) {
+//       console.log(elem)
+//       if (elem.innerText.search(val) == -1) {
+//         elem.classList.add('hide');
+//       }
+//       else {
+//         elem.classList.remove('hide');
+//       }
+//     })
+//   } else {
+//     items.forEach(function (elem) {
+//       elem.classList.remove('hide');
+//     });
+//   }
+// }
+
+function search() {
+  var input, filter, table, tr, p, i, txtValue;
+
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  table = document.querySelector(".g-table");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    console.log(tr.length)
+    p = tr[i].getElementsByTagName("p")[0];
+    if (p) {
+      txtValue = p.textContent || p.innerText;
+      console.log(txtValue)
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+

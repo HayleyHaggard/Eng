@@ -204,14 +204,60 @@
 
 
 
-// <span class="g-accent"></span>
 
-//—
 
-//<b></b>
 
-//<a href="#">Подробнее о конструкции to be going to здесь...</a>
+//таблицы с поиском
 
-//<!-- продвинутая грамматика -->
+//переделать!! (маркер слева как часто используем )
+.f-marker {
+  background: #a1a6bb;
+  display: inline-block;
+  height: 6px;
+  min-width: 2px;
+  max-width: 22px
+}
 
-//<!-- маркеры -->
+.f-marker__wrapper {
+  height: 18px;
+  overflow: hidden;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.s-menu {
+  position: fixed;
+  top: 55%;
+  left: 10px;
+  transform: translate(0, -50%);
+  z-index: 100;
+  &__ul {
+    text-align: center;
+  }
+  &__ul:hover {
+    .s-menu__a {
+      color: $default;
+    }
+  }
+  &__li {
+    padding: 2px 4px;
+    transition: all .1s ease-in-out;
+    &:hover {
+      background-color: $accent-light;
+      border-radius: 4px;
+    }
+  }
+  &__li:not(:last-child) {
+    margin-bottom: 2px;
+  }
+  &__a {
+    transition: all .2s ease-in-out;
+    color: grey;
+  }
+}
