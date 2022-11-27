@@ -1,0 +1,24 @@
+//grammar/exercises/vocabulary
+.page {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  &__item {
+    padding: 20px;
+    max-width: 370px;
+    min-height: 300px;
+    background-color: $grey;
+    border-radius: 24px;
+  }
+  &__item-name {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    background-color: $accent;
+    border-radius: 4px;
+  }
+}

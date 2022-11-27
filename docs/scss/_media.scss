@@ -1,0 +1,280 @@
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  //h2 (title top)
+  .g-title {}
+  //h3 (subtitle top)
+  .g-subtitle {}
+  //h4 (subtitle of topic)
+  .g-topic-subtitle {
+    @include adaptiv-font(40, 30);
+  }
+  //h5 (little subtitle)
+  .g-little-subtitle {}
+
+  .top {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    &__span,
+    &__title {
+      @include adaptiv-font(62, 48);
+    }
+    &__span {
+      display: inline-block;
+    }
+    &__text {
+      @include adaptiv-font(24, 20);
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .grammar-section {
+    &__inner {}
+    &__subtitle {}
+  }
+
+  .form {
+    &__title {
+      @include adaptiv-font(30, 20);
+    }
+  }
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .update-section {
+    &__inner {
+      flex-direction: column;
+    }
+    &__info {
+      padding: 0;
+    }
+  }
+
+  .form {
+    padding-bottom: 25px;
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    &__items {
+      flex-direction: column;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__box {
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+        // max-width: auto;
+      }
+    }
+    &__btn {
+      order: 2;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+  .menu {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 90px;
+      text-align: center;
+      background-color: white;
+      transform: translateX(-200%);
+      transition: transform .7s ease-in-out;
+      z-index: 500;
+    }
+    .menu__list.active {
+      transform: translateX(0%);
+    }
+    &__list-item {
+      font-size: 24px;
+      padding: 10px 0;
+    }
+    &__list-item:last-child {
+      padding: 30px 0;
+      margin-right: 12px;
+      font-size: 18px;
+    }
+    &__btn {
+      position: relative;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 22px;
+      background-color: transparent;
+      border: none;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $default;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $default;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  .grammar-section {
+    padding-top: 50px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__grammar-img {
+      display: none;
+    }
+  }
+
+  .footer {
+    &__ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // .menu__btn {
+  //   &::before {
+  //     content: "";
+  //     top: 10px;
+  //     transform: rotate(45deg);
+  //     transition: top 300ms, transform 300ms 300ms ease;
+  //   }
+  //   &::after {
+  //     content: "";
+  //     bottom: 10px;
+  //     transform: rotate(-45deg);
+  //     transition: bottom 300ms, transform 300ms 300ms ease;
+  //   }
+  //   &::before,
+  //   &::after {
+  //     background-color: $black;
+  //   }
+  //   span {
+  //     background-color: transparent;
+  //   }
+  // }
+}
+
+
+
+// @media (max-width: 1230px) {
+//   .blog {
+//     &__items {
+//       &:after {
+//         right: 8px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1200px) {
+//   .blog {
+//     &__items {
+//       display: grid;
+//       grid-gap: 30px;
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//     &__item-box {
+//       padding: 20px 15px;
+//     }
+//   }
+// }
+// @media (max-width: 1050px) {
+//   .blog {
+//     &__items {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+//     &__item {
+//       max-width: 100%;
+//       img {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .blog {
+//     padding: 60px 0;
+//     &__items {
+//       grid-template-columns: repeat(1, 1fr);
+//     }
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .blog-box {
+//     display: block;
+//     &__date {
+//       margin-top: 10px;
+//     }
+//   }
+//   .blog {
+//     &__item-imglink {
+//       img {
+//         height: 220px;
+//       }
+//     }
+//   }
+// }
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .footer {
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__ul {
+      align-items: center;
+    }
+    &__li:last-child {
+      margin-right: 30px;
+    }
+    .logo__img {
+      margin: 0 auto;
+    }
+  }
+}

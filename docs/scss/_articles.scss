@@ -1,0 +1,57 @@
+//side-menu--------------------------------
+.s-menu {
+  position: fixed;
+  top: 55%;
+  left: 10px;
+  transform: translate(0, -50%);
+  z-index: 100;
+  &__ul {
+    text-align: center;
+  }
+  &__ul:hover {
+    .s-menu__a {
+      color: $default;
+    }
+  }
+  &__li {
+    padding: 2px 4px;
+    transition: all .1s ease-in-out;
+    &:hover {
+      background-color: $accent-light;
+      border-radius: 4px;
+    }
+  }
+  &__li:not(:last-child) {
+    margin-bottom: 2px;
+  }
+  &__a {
+    transition: all .2s ease-in-out;
+    color: grey;
+  }
+}
+
+
+//general parts--------------------------------
+
+//text .g-articles
+.g-paragraph {
+  padding-right: 8px;
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+
+//примеры слов или предложений
+.g-ul {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.g-li {
+  padding-bottom: 10px;
+  color: $default;
+  background-image: url('../img/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}

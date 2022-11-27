@@ -1,0 +1,92 @@
+body {
+  @extend %medium;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $default;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+a {
+  @extend %bold;
+  color: $default;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+//main container for articles
+.g-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 900px;
+}
+
+//top of every page
+.g-top {
+  padding: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: $accent-light;
+}
+
+// h1-main
+// h2-every file
+// h3-every file (subtitle main on top)
+// h4-every file (subtitle of topic)
+// h5-every file (subtitle little)
+
+//h2 (title top)
+.g-title {
+  display: inline-block;
+  // margin-bottom: 5px;
+  padding-top: 30px;
+  @extend %semiBold;
+  color: $default;
+  font-size: 58px;
+  border-bottom: 5px solid $accent;
+}
+//h3 (subtitle top)
+.g-subtitle {
+  margin-top: 10px;
+  font-size: 26px;
+  color: $default;
+}
+//h4 (subtitle of topic)
+.g-topic-subtitle {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: $default;
+}
+//h5 (little subtitle)
+.g-little-subtitle {
+  padding-left: 35px;
+  margin-bottom: 35px;
+  font-size: 22px;
+  color: $default;
+  background-image: url('../img/icons/book.svg');
+  background-repeat: no-repeat;
+  background-position: 0 60%;
+}
+
+//акцентный цвет нужных слов
+.g-accent {
+  color: $accent-words;
+}
+
+
+.noscroll {
+  overflow: hidden;
+}
