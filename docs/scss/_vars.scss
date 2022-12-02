@@ -1,6 +1,7 @@
 $default: #000;
-
+$white: #fdfdfd;
 $accent: #d2a3e3;
+$grey: #717171;
 
 // #d0c0d5 
 //nice color
@@ -51,14 +52,14 @@ $grey: #F7F7F7;
   background-color: $default;
   color: white;
   @extend %bold;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 %input {
   margin-bottom: 15px;
   padding: 15px;
   width: 100%;
-  color: black;
+  color: $default;
   border: none;
   border-radius: 5px;
   resize: none;

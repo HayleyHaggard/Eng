@@ -4,13 +4,7 @@ $('.menu__btn').on('click', function () {
   document.querySelector('body').classList.toggle('noscroll');
 })
 
-// $('.top-slider__inner').slick({
-//   dots: true,
-//   arrows: false,
-//   fade: true,
-//   autoplay: true,
-//   autoplaySpead: 3000
-// });
+
 
 // //------------------SPEECH-----------------------------
 // let voices = speechSynthesis.getVoices()
