@@ -8,7 +8,7 @@
 @import 'header';
 @import 'tables';
 
-//основные разделы (лексика, грамматика)
+//основные разделы (лексика, грамматика) и прочие(политика, обновления)
 @import 'page';
 
 //отдельные статьи
@@ -46,7 +46,7 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
   &__inner:hover .grammar-section__item {
@@ -96,7 +96,7 @@
 
 
 .update-section {
-  background-color: #ebebeb;
+  background-color: $light-grey;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,7 @@
     margin-right: 10px;
   }
   &__label::placeholder {
-    color: $grey;
+    color: $light-grey;
   }
   &__input {
     @extend %input;
@@ -213,7 +213,7 @@
 }
 
 .blog-item {
-  max-width: 350px;
+  // max-width: 350px;
   border-radius: 5px;
   transition: all .3s ease-in-out;
   &__img {
