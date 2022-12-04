@@ -39,10 +39,11 @@ button {
 
 //top of every page
 .g-top {
+  margin-top: 80px;
   padding: 30px;
   margin-bottom: 40px;
   text-align: center;
-  background-color: $accent-light;
+  background-color: $light-grey;
 }
 
 // h1-main
@@ -92,11 +93,15 @@ button {
   padding: 80px 0;
 }
 
-// //отступ на главных страницах разделов
-// .g-margin {
-//   margin-bottom: 25px;
-// }
+//отступ между логическими блоками
+.g-margin {
+  margin-bottom: 25px;
+}
 
+//список примеров, пофиксить позже
+.g-marker-adaptiv {
+  margin-bottom: 15px;
+}
 
 .noscroll {
   overflow: hidden;

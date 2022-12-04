@@ -1,15 +1,35 @@
 /* Large desktops and laptops */
 @media (max-width: 1200px) {
   //h2 (title top)
-  .g-title {}
+  .g-title {
+    @include adaptiv-font(58, 30);
+    padding-top: 15px;
+    line-height: 1.1;
+  }
   //h3 (subtitle top)
-  .g-subtitle {}
+  .g-subtitle {
+    @include adaptiv-font(26, 20);
+  }
   //h4 (subtitle of topic)
   .g-topic-subtitle {
     @include adaptiv-font(40, 28);
   }
   //h5 (little subtitle)
-  .g-little-subtitle {}
+  .g-little-subtitle {
+    @include adaptiv-font(22, 18);
+    margin-bottom: 10px;
+  }
+
+  .g-top {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .g-margin {
+    margin-bottom: 10px;
+  }
+
+
 
   .top {
     &__inner-title {
@@ -118,6 +138,16 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .g-paragraph .g-li>span {
+    display: block;
+  }
+  .g-ul {
+    padding: 0;
+  }
+
   .header {
     &__btn {
       display: none;
@@ -326,6 +356,9 @@
     }
     .logo__img {
       margin: 0 auto;
+    }
+    &__bottom {
+      font-size: 14px;
     }
   }
 }
