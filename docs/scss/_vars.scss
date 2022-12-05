@@ -91,3 +91,8 @@ $maxWidth: 1200;
     font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
 }
+
+// <span class="g-accent"></span>
+// —
+// <s></s>
+// <b></b>
