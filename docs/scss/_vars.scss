@@ -1,0 +1,28 @@
+$white: #fdfdfd;
+$default: #000;
+$accent: #9970f1;
+
+%medium {
+  font-family: "OpenSans-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%mediumI {
+  font-family: "OpenSans-MediumItalic", sans-serif;
+  font-weight: 500;
+}
+
+%semiBold {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%bold {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%boldI {
+  font-family: "OpenSans-BoldItalic", sans-serif;
+  font-weight: 700;
+}

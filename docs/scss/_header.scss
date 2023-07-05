@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 999;
+  &__inner {
+    padding: 22px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__btn {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  &__list-item {
+    margin-bottom: 4px;
+  }
+  &__list-item:not(:last-child) {
+    margin-right: 12px;
+  }
+  &__list-link {
+    padding: 4px 6px;
+    transition: color 0.2s ease-in-out;
+  }
+  &__list-link:hover {
+    color: $accent;
+  }
+}
