@@ -1,5 +1,6 @@
 $white: #fdfdfd;
 $default: #000;
+$light-grey: #ebebeb;
 $accent: #9970f1;
 
 %medium {
@@ -25,4 +26,22 @@ $accent: #9970f1;
 %boldI {
   font-family: "OpenSans-BoldItalic", sans-serif;
   font-weight: 700;
+}
+
+%btn {
+  padding: 15px 27px;
+  background-color: $default;
+  color: white;
+  @extend %bold;
+  border-radius: 5px;
+}
+
+%input {
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+  color: $default;
+  border: none;
+  border-radius: 5px;
+  resize: none;
 }
