@@ -2,10 +2,11 @@
 @import "fonts";
 @import "reset";
 @import "global";
+@import "media";
 
 //header and footer
-@import "_header";
-@import "_footer";
+@import "header";
+@import "footer";
 
 //main page
 .section {
@@ -171,4 +172,103 @@
     background-color: $white;
     color: $default;
   }
+}
+
+//адаптив главной страницы
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .top {
+    &__inner-title {
+      @include adaptiv-font(140, 50);
+    }
+  }
+
+  .grammar-section {
+    &__inner:hover .grammar-section__item {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+      box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__inner:hover .grammar-section__item:hover {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+      box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  .grammar-section {
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  .update-section {
+    &__inner {
+      flex-direction: column;
+    }
+    &__info {
+      padding: 0;
+    }
+  }
+
+  .form {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    &__items {
+      flex-direction: column;
+    }
+    &__text {
+      @include adaptiv-font(20, 16);
+    }
+    &__box {
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+    }
+    &__btn {
+      order: 2;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .grammar-section {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      padding: 15px;
+    }
+    &__item-box {
+      margin-bottom: 0;
+      justify-content: start;
+    }
+    &__item-title {
+      text-align: left;
+    }
+    &__item-text {
+      text-align: left;
+    }
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
 }

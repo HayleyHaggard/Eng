@@ -79,3 +79,26 @@ main {
   background-repeat: no-repeat;
   background-position: 0 60%;
 }
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  //h2 (title top)
+  .g-title {
+    @include adaptiv-font(58, 30);
+    // padding-top: 15px;
+    // line-height: 1.1;
+  }
+  //h3 (subtitle top)
+  .g-subtitle {
+    @include adaptiv-font(26, 20);
+  }
+  //h4 (subtitle of topic)
+  .g-topic-subtitle {
+    @include adaptiv-font(40, 28);
+  }
+  //h5 (little subtitle)
+  .g-little-subtitle {
+    @include adaptiv-font(22, 19);
+    // margin-bottom: 10px;
+  }
+}

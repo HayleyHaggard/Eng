@@ -36,3 +36,74 @@
     color: $accent;
   }
 }
+
+//адаптив хэдера
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__list {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 78px;
+      text-align: center;
+      background-color: $white;
+      transform: translateX(-200%);
+      transition: transform 0.5s ease-in-out;
+      // z-index: 500;
+    }
+    .menu__list.active {
+      transform: translateX(0%);
+    }
+    &__list-item {
+      font-size: 24px;
+      padding: 10px 0;
+    }
+    &__list-item:last-child {
+      padding: 30px 0;
+      margin-right: 12px;
+      font-size: 18px;
+    }
+    &__btn {
+      position: relative;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 22px;
+      background-color: transparent;
+      border: none;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $default;
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $default;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -26,3 +26,36 @@
     font-size: 14px;
   }
 }
+
+//адаптив футера
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .footer {
+    &__ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .footer {
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__ul {
+      align-items: center;
+    }
+    &__li {
+      margin-right: 0 !important;
+    }
+    .logo__img {
+      margin: 0 auto;
+    }
+    &__bottom {
+      font-size: 14px;
+    }
+  }
+}
