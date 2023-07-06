@@ -41,6 +41,11 @@ main {
   flex-direction: column;
 }
 
+//глобальные стили
+.g-padding {
+  padding: 80px 0;
+}
+
 //все заголовки
 // h1-main
 // h2-every file
@@ -51,7 +56,7 @@ main {
 //h2 (title top)
 .g-title {
   display: inline-block;
-  padding-top: 30px;
+  // padding-top: 30px;
   @extend %bold;
   color: $default;
   font-size: 58px;
